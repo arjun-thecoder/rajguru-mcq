@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <title>Rajguru Classes | ज्ञान • इतिहास • सफलता</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="main-box">
+
+    <!-- TOP SECTION: Header and Content-Wrapper side by side -->
+    <div class="top-section">
+        <!-- HEADER BOX -->
+        <div class="header">
+            <div class="logo">
+                <img src="Main_Logo.jpeg" alt="Rajguru Classes">
+                <div class="brand-info">
+                    <span class="brand-name">Rajguru Classes</span>
+                    <span class="tagline">ज्ञान • इतिहास • सफलता</span>
+                </div>
+            </div>
+
+            <div class="sidebar-controls">
+                <div class="date-info">
+                    <span id="date-display"></span>
+                    <input type="date" id="date-picker" min="2026-01-01" max="2026-01-31" onchange="selectDate()">
+                </div>
+                <button onclick="goToToday()" class="today-btn-sidebar">📅 Today</button>
+            </div>
+            
+            <a href="https://www.youtube.com/@RajguruClasses" target="_blank" class="subscribe-btn">
+                🔔 जहाँ तैयारी बने जीत की गारंटी
+            </a>
+        </div>
+
+        <!-- CONTENT-WRAPPER BOX -->
+        <div class="content-wrapper">
+            <!-- MCQ CARD -->
+            <div class="container">
+                <!-- Date Navigation -->
+                <div class="date-nav">
+                    <button onclick="changeDate(-1)" class="nav-btn">⬅ Previous Day</button>
+                    <button onclick="changeDate(1)" class="nav-btn">Next Day ➡</button>
+                </div>
+
+                <div id="mcq-box" class="card"></div>
+
+                <button id="nextBtn" onclick="nextQuestion()" disabled>
+                    Next Question ➡
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- EXPLANATION CONTAINER -->
+    <div id="exp-container"></div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

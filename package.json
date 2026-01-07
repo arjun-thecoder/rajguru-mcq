@@ -1,0 +1,12 @@
+{
+  "name": "rajguru-classes-mcq",
+  "version": "1.0.0",
+  "description": "Rajguru Classes - Rajasthan GK MCQ Practice Platform | ज्ञान • इतिहास • सफलता",
+  "main": "converter.js",
+  "scripts": {
+    "convert": "node converter.js"
+  },
+  "dependencies": {
+    "xlsx": "^0.18.5"
+  }
+}
